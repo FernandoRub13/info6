@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProofController;
@@ -21,6 +22,7 @@ Route::get('/', function () {
 
 Route::resource('/post', PostController::class);
 Route::resource('/proofs', ProofController::class);
+Route::resource('/categories', CategoryController::class);
 
 
 Auth::routes();
