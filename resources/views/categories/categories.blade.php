@@ -84,7 +84,7 @@
         formDelete.setAttribute('action', action)
     //console.log(formDelete.getAttribute)
   
-    modalTitle.textContent = modalTitle.textContent + id;
+    modalTitle.textContent = modalTitle.textContent.slice(0, -1) + ' ' +  id;
     //modalBodyInput.value = recipient
   });
 </script>
